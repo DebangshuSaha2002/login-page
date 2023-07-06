@@ -29,7 +29,7 @@ const ForgetPass = () => {
   };
 
   const NextButtonHandler = (event) => {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default form submission
 
     if (user.length === 0 || email.length === 0 || isNaN(Phnum)) {
       setFormVisible(false);
